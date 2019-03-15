@@ -78,7 +78,7 @@ public class MainActivity extends Activity {
                        Fragment fragment = fragMan.findFragmentByTag("visible_fragment");
                        if(fragment instanceof TopFragment)
                            currentPosition = 0;
-                       if (fragment instanceof PizzaFragment)
+                       if (fragment instanceof PizzaMaterialFragment)
                            currentPosition = 1;
                        if (fragment instanceof PastaFragment)
                            currentPosition = 2;
@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 
         switch(position) {
             case 1:
-                fragment = new PizzaFragment();
+                fragment = new PizzaMaterialFragment();
                 break;
             case 2:
                 fragment = new PastaFragment();
